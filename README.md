@@ -17,6 +17,7 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd --teamtailor`
 * `npm install`
+* Create a .env file with a variable called api_key for the api key
 
 ## Running / Development
 
