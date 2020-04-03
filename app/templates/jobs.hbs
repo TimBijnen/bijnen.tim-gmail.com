@@ -1,1 +1,10 @@
-{{outlet}}
+<h1>Jobs</h1>
+{{#each @model as |job|}}
+    <p>
+        <LinkTo @route="job" @model={{job}}>
+            JOB ID {{job.id}} -- {{ job.title }}
+        </LinkTo>
+    </p>
+{{else}}
+    LOADING...
+{{/each}}

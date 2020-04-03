@@ -45,8 +45,10 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.APP.API_ROOT = "https://api.teamtailor.com/v1/";
   }
+  ENV.APP.API_VERSION = "v1";
+  ENV.APP.API_ROOT = "https://api.teamtailor.com";
+  ENV.APP.API_TOKEN = process.env.API_TOKEN;
 
   return ENV;
 };

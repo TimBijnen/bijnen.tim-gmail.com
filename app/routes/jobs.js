@@ -1,7 +1,7 @@
-import Route from '@ember/routing/route';
+import Route from "@ember/routing/route";
 
 export default class JobsRoute extends Route {
     model() {
-        return "jobs";
+        return this.store.findAll("job");
     }
 }

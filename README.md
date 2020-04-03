@@ -17,7 +17,16 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd --teamtailor`
 * `npm install`
-* Create a .env file with a variable called api_key for the api key
+
+Create a .env file with the following content in the root folder
+```
+export API_TOKEN={{YOUR_API_TOKEN}}
+```
+and source it
+```
+source .env
+```
+this adds the API_TOKEN as a variable to your unix session
 
 ## Running / Development
 
