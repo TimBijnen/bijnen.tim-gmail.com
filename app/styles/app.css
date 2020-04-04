@@ -1,5 +1,5 @@
 .l-wrapper {
-    max-width: 800px !important;
+    max-width: 1000px !important;
 }
 .job-link {
     width: 100%;
@@ -25,4 +25,8 @@
     cursor: pointer !important;
     -webkit-transform: scale(1.01) !important;
     transform: scale(1.01) !important;
+}
+.liquid-child {
+    width: 100%;
+    padding: 36px;
 }
