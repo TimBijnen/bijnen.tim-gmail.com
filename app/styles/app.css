@@ -9,9 +9,14 @@
     width: 100%;
 }
 .joblink-row div:first-of-type {
-    width: 100%;
+    width: 80%;
 }
 .joblink-row div:last-of-type {
-    width: 150px;
+    width: 20%;
     text-align: right;
+}
+.u-text-normal h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
