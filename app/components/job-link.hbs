@@ -1,4 +1,4 @@
-<p class="list-control-item list-control-item--clickable">
+<p class="list-control-item list-control-item--clickable {{if @active "list-control-item__active"}}">
     <LinkTo @route="job" @model={{@job}} class="list-control-column job-link">
         <div class="joblink-row">
             <div class="u-text--normal u-color--text">
@@ -10,7 +10,7 @@
         </div>
         <div class="joblink-row">
             <div>
-                Location: {{ @job.location }}
+                {{ @job.location }}
             </div>
             <div >
                 {{ @job.match }}% match

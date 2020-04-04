@@ -20,3 +20,9 @@
     white-space: nowrap;
     overflow: hidden;
 }
+.list-control-item__active {
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.21), 0 13px 33px 0 rgba(0,0,0,.16) !important;
+    cursor: pointer !important;
+    -webkit-transform: scale(1.01) !important;
+    transform: scale(1.01) !important;
+}
