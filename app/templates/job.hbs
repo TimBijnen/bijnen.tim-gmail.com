@@ -1,4 +1,9 @@
-<h1 class="c-action-heading__header-text">JOB</h1>
-{{@model.id}} -- 
-{{@model.title}} -- 
-{{@model.body}}
+<div class="tt-form-group ">
+    <h1 class="c-action-heading__header-text">{{@model.title}}</h1>
+</div>
+<div class="tt-box-group">
+    {{{@model.body}}}
+</div>
+<div>
+    {{log @model.role}}
+</div>
