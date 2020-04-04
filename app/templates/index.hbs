@@ -1,0 +1,38 @@
+<h5>Code challenge</h5>
+<h6>Tim Bijnen</h6>
+
+<p>
+    For this assignment i started with a TDD approach, but after some trial and error i figured
+    i had to refresh my knowledge of emberjs, since it has been a good couple of years since i've
+    used it. I dropped the testing part and focused on creating the actual app.
+    First i needed to load the data from the backend, and because i'm not too
+    familiar with emberDS, it took me a while to figure out what data the models need. After
+    successfully loading the data there was not much time left, and i was stuck with an unstyled
+    application. So i got access to a demo of the Teamtailor app and looked for the css links.
+    Luckily they were publicly accessible and not obfuscated. I then copied a bit of HTML to create
+    a basic interface similar to the real app. There was not much data about the jobs, so i put my
+    last efforts into creating a smooth user experience.
+</p>
+<p>   
+    In total i've spent a good 5 hours on writing the code and about 6 hours of studying.
+</p>
+
+<h6>Accessing the jobs list</h6>
+<p>
+    If you have followed the instructions in the readme file you should be able to
+    access the API and view the <LinkTo @route="jobs">Jobs page</LinkTo>. If this
+    is not the case, you can set your api token in the input field below.
+    It saves the key in the localstorage, so make sure to remove it when you're finished.
+    After you've entered the key you will have to refresh the page. There wasn't enough time
+    to properly handle errors, so check the console if there is any unexpected behaviour.
+</p>
+
+<div style="display: flex;">
+    <Input @value={{this.apiToken}} @enter={{this.setApiToken}} />
+    <Button @click={{this.setApiToken}}>
+        Update API token
+    </Button>
+    <Button @click={{this.removeApiToken}}>
+        Remove API token
+    </Button>
+</div>

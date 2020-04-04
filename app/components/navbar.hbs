@@ -1,24 +1,24 @@
 <header class="global-header">
-    <a
+    <LinkTo
         title="Return to dashboard"
-        href="/jobs"
+        @route="index"
         class="global-header__logo"
     >
         <img
             src="https://ember.cdn.teamtailor.com/ember-production/assets/images/teamtailor-t-logo-0c90dbe37f113a74ed1c9e92810d4488.svg"
             alt="Teamtailor"
         />
-    </a>
+    </LinkTo>
     <nav class="primary-nav">
         <ul class="primary-nav__menu burger-menu--hide">
             <li class="primary-nav__list-item">
-                <a
+                <LinkTo
                     title="View all jobs"
-                    href="/jobs"
+                    @route="jobs"
                     class="primary-nav__link active"
                 >
                     Jobs
-                </a>
+                </LinkTo>
             </li>
         </ul>
     </nav>

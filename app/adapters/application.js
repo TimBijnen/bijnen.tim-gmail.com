@@ -8,7 +8,7 @@ export default JSONAPIAdapter.extend({
   headers: computed(function() {
     return {
       "X-Api-Version": "20161108",
-      "Authorization": `Token token=${ ENV.APP.API_TOKEN }`,
+      "Authorization": `Token token=${ localStorage.getItem("apiToken") || ENV.APP.API_TOKEN }`,
     };
   })
 });
