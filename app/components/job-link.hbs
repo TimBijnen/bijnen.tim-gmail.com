@@ -1,19 +1,19 @@
 <p class="list-control-item list-control-item--clickable">
     <LinkTo @route="job" @model={{@job}} class="list-control-column job-link">
-        <div class="joblink-header">
+        <div class="joblink-row">
             <div>
-                {{ @job.title }}
+                <h5>{{ @job.title }}</h5>
             </div>
-            <div>
-                Salary: &#x2605;
+            <div class="u-text--normal u-color--text">
+                <h6>Salary: €{{ @job.salary }}</h6>
             </div>
         </div>
-        <div class="joblink-header">
+        <div class="joblink-row">
             <div>
-                Location: Eindhoven
+                Location: {{ @job.location }}
             </div>
-            <div>
-                79% match
+            <div >
+                {{ @job.match }}% match
             </div>
         </div>
     </LinkTo>
