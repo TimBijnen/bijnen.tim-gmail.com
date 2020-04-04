@@ -1,5 +1,15 @@
 <p class="list-control-item list-control-item--clickable">
-    <LinkTo @route="job" @model={{@job}} class="list-control-column">
-        {{ @job.title }}
+    <LinkTo @route="job" @model={{@job}} class="list-control-column job-link">
+        <div class="joblink-header">
+            <div>
+                {{ @job.title }}
+            </div>
+            <div>
+                Salary: &#x2605;
+            </div>
+        </div>
+        <div>
+            Location: Eindhoven
+        </div>
     </LinkTo>
 </p>
